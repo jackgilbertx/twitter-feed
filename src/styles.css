@@ -1,0 +1,18 @@
+.timeline {
+  height: 250px;
+  width: 250px;
+}
+.feed {
+  margin-bottom: 10px;
+}
+.twitterContainer {
+  margin-top: 50px;
+  border-radius: 5px;
+  /* box-shadow: 0px 1px 10px #00000047; */
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.follow {
+  margin: auto;
+}
