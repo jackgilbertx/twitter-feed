@@ -1,14 +1,11 @@
 import React from "react";
-import Twitter from "./Twitter.js";
-import Follow from "./Follow";
+import Feed from "./Feed";
+
 import "./styles.css";
 const App = () => {
   return (
-    <div className="container">
-      <div className="feed" style={{ width: "200px", height: "200px" }}>
-        <Twitter />
-      </div>
-      <Follow />
+    <div style={{ width: "100px" }}>
+      <Feed height="200" feed="cargill" />
     </div>
   );
 };
