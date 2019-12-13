@@ -4,12 +4,24 @@ import "./styles.css";
 
 const Follow = () => {
   return (
-    <div className="follow">
-      <TwitterFollowButton
-        screenName="cargill"
-        options={{ size: "large", showCount: "false" }}
-      />
-    </div>
+    // <button
+    //   style={{
+    //     width: "100%",
+    //     height: "30px",
+    //     backgroundColor: "skyblue",
+    //     borderRadius: "5px",
+    //     color: "white",
+    //     fontStyle: "bold",
+    //     fontSize: "1.08em"
+    //   }}
+    // >
+    //   Follow us @cargill
+    // </button>
+
+    <TwitterFollowButton
+      screenName="cargill"
+      options={{ size: "large", showCount: "false" }}
+    />
   );
 };
 

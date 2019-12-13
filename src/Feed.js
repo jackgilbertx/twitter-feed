@@ -1,23 +1,33 @@
 import React from "react";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Follow from "./Follow";
-const Feed = ({ height, feed }) => {
+const Feed = ({
+  height,
+  feed,
+  renderFollowButton,
+  renderFooter,
+  renderHeader
+}) => {
   return (
     <div className="container">
-      <div style={{ height: `${height}px` }}>
+      <div className="timeline" style={{ height: `${height}px` }}>
         <TwitterTimelineEmbed
-          borderColor="#658D1B"
+          borderColor="#fff"
           linkColor="#658D1B" // not working
           autoHeight
           theme="light"
           lang="en"
           sourceType="profile"
           screenName={feed}
-          // noFooter
-          // noHeader
+          noFooter={!renderFooter ? "true" : ""}
+          noHeader={!renderHeader ? "true" : ""}
         />
       </div>
-      <Follow />
+      {renderFollowButton && (
+        <div className="follow">
+          <Follow />
+        </div>
+      )}
     </div>
   );
 };

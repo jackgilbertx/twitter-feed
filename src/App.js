@@ -3,9 +3,17 @@ import Feed from "./Feed";
 
 import "./styles.css";
 const App = () => {
+  const props = {
+    height: "400",
+    feed: "cargill", //twitter handle (cargill, foodsecureworld etc)
+    renderFollowButton: true,
+    renderFooter: false,
+    renderHeader: false
+  };
+
   return (
-    <div style={{ width: "100px" }}>
-      <Feed height="200" feed="cargill" />
+    <div style={{ width: "200px" }}>
+      <Feed {...props} />
     </div>
   );
 };
