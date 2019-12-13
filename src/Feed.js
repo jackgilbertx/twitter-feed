@@ -1,6 +1,6 @@
 import React from "react";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
-import Follow from "./Follow";
+import FollowButton from "./Follow";
 const Feed = ({
   height,
   feed,
@@ -25,7 +25,7 @@ const Feed = ({
       </div>
       {renderFollowButton && (
         <div className="follow">
-          <Follow />
+          <FollowButton />
         </div>
       )}
     </div>
