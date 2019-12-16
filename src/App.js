@@ -1,18 +1,18 @@
 import React from "react";
-import Feed from "./Feed";
+import TwitterFeed from "./TwitterFeed";
 
 import "./styles.css";
 const App = () => {
   const props = {
-    height: "400",
+    height: "300",
     feed: "cargill", //twitter handle (cargill, foodsecureworld etc)
     renderFollowButton: true,
-    renderHeader: true
+    renderHeader: false
   };
 
   return (
     <div style={{ width: "200px" }}>
-      <Feed {...props} />
+      <TwitterFeed {...props} />
     </div>
   );
 };
