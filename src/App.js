@@ -7,8 +7,7 @@ const App = () => {
     height: "400",
     feed: "cargill", //twitter handle (cargill, foodsecureworld etc)
     renderFollowButton: true,
-    renderFooter: false,
-    renderHeader: false
+    renderHeader: true
   };
 
   return (

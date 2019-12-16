@@ -1,13 +1,7 @@
 import React from "react";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import FollowButton from "./Follow";
-const Feed = ({
-  height,
-  feed,
-  renderFollowButton,
-  renderFooter,
-  renderHeader
-}) => {
+const Feed = ({ height, feed, renderFollowButton, renderHeader }) => {
   return (
     <div className="container">
       <div className="timeline" style={{ height: `${height}px` }}>
@@ -19,7 +13,6 @@ const Feed = ({
           lang="en"
           sourceType="profile"
           screenName={feed}
-          noFooter={!renderFooter ? "true" : ""}
           noHeader={!renderHeader ? "true" : ""}
         />
       </div>

@@ -4,10 +4,12 @@ import "./styles.css";
 
 const FollowButton = () => {
   return (
-    <TwitterFollowButton
-      screenName="cargill"
-      options={{ size: "large", showCount: "false" }}
-    />
+    // <TwitterFollowButton
+    //   screenName="cargill"
+    //   options={{ size: "large", showCount: "false" }}
+    // />
+
+    <button>dfgdfgdfg</button>
   );
 };
 
