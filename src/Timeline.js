@@ -8,11 +8,12 @@ const Timeline = ({ height, feed, renderHeader }) => {
         borderColor="#fff"
         autoHeight
         theme="light"
-        lang="zh-tw"
+        lang={language}
         sourceType="profile"
         screenName={feed}
         noHeader={!renderHeader ? "true" : ""}
         noFooter
+        transparent
       />
     </div>
   );
